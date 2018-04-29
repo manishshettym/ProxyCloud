@@ -1,0 +1,1 @@
+var country = "india"; var countryisocode = "ind"; var state = "maharashtra"; var metro = "no metro"; var metrocode = "0"; var postcode = "400001"; var offset = "530"; var dst = "n"; var countrycode = "356"; var connection = "mobile"; 

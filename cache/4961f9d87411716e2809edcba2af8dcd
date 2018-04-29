@@ -1,0 +1,3 @@
+// Store the original getScript reference
+;jQuery = jQuery || {}; jQuery._getScript = jQuery.getScript;
+jQuery.getScript=function(e,c){return c=$.extend(c||{},{dataType:"script",cache:!0,url:e}),jQuery.ajax(c)};

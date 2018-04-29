@@ -1,0 +1,30 @@
+sudo apt-get install openssh-server
+
+Ssh: Secure Shell --> bash:"born again shell"
+
+generally we connect to a server using :
+ssh<server ip> 
+
+to connect to a locally hosted server we use : ssh < username> @localhost
+NOTE : 127.0.0.1
+
+~ : home directory
+
+cat < ipfile : take ip from file
+cat > opfile : put screen stuff onto a file
+
+ls : list of files in file directory 
+=> 
+d : directory
+rwx : read write execute
+
+ps : processes list
+kill <pid> : kill process with id pid
+
+for a big code : if any process has been updated then there are dependencies 
+BUT recompiling the entire file is a HEADACHE !!!
+
+SO we keep a log of all files which are affected by the change in a MAKE file 
+so we first run the make file -> make / make -f filename
+
+

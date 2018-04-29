@@ -1,0 +1,10 @@
+(function($){
+	$.getScript("/navigation/cricinfo/ci/responsive/js/src/modules/nav.js");
+	$.getScript("/navigation/cricinfo/ci/responsive/js/src/modules/lhs.js?v=1426583256");
+	if($('.series-page-main').html() && $('.series-page-main').html().length > 0){ 
+		$.getScript("/navigation/cricinfo/ci/responsive/js/src/modules/home.js");
+	}
+
+})(jQuery);
+
+

@@ -1,0 +1,49 @@
+SOCKET programming in python:
+
+import socket
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+This line is used to create a  sockekt instance with parameter1: address family ip4 and parameter2: TCP protocol oriented connection
+
+
+This socket is now usable to connect to a server
+connection is possible only by knowing the ip of the server
+
+
+How to find ip ?????
+
+ip= socket.gethostbyname('www.google.com')
+print ip
+
+
+###An example script to connect to Google using socket is in the folder created -> socketver1.py
+
+
+NOW how to send/recieve data from the server ???
+
+We can send our data using the sendall() function from the socket library
+Infact the server can send data back too
+
+A simple client-server program:
+
+1.A server has a bind() method which binds it to a specific ip and port so that it can listen to incoming requests on that ip and port.A server has a listen() method which puts the server into listen mode.
+
+2.A server has an accept() and close() method. The accept method initiates a connection with the client and the close method closes the connection with the client.
+
+
+###An example script has been created -> socketver2.py 
+
+THE SERVER:
+
+--> in thata file the s.listen(5) 5 here represents the fact that server here listens to 5 connnections at once when the server is busy
+A 6th socket is refused to connect
+
+--> The while loop is to accept all incominig connections andd close those connections after.
+
+THE CLIENT:
+
+USE THE TERMINAL TO CONNECT
+
+
+
