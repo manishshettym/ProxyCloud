@@ -25,6 +25,10 @@ class CacheHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     def do_GET(self):
 
+      
+
+
+
       m = hashlib.md5()
       m.update(self.path),
       cache_filename = m.hexdigest()
@@ -32,15 +36,6 @@ class CacheHandler(BaseHTTPServer.BaseHTTPRequestHandler):
       req_c = counterincrement();
 
       print("THE REQ COUNT IS : ",req_c)
-
-
-      
-        
-      
-
-        
-
-
 
       print("<-----:",cache_filename,":------>");
 

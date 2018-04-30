@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="static/sheet.css">
+	<!-- The link tag defines a link between a html document and an external style sheet-->
+  	<link rel = "stylesheet" href = "static/style.css" type = "text/css" />
+  	<!-- The viewport is the user's visible area of a website-->
+  	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+</head>
+<body class="body">
+
+	<header class = "mainHeader" >
+    <!-- The nav tag defines the navigation bar -->
+    <!-- The ul tag defines the unordered lists -->
+    <nav><ul>
+    	<img src="static/logo.png" style="float:left; height:60px;">
+      <li><a href = "#">Home</a></li>
+      <li><a href = "{{ url_for('about') }}">About</a></li>
+      <li><a href = "{{ url_for('howitworks') }}">How It Works</a></li>
+    </ul></nav>
+   	</header>
+
+	<h1> The Web Server: </h1>
+	<p style="font-size:25px;font-family:Ubuntu;"> The web server is a simple base http server running on python using the BaseHttpServer module and its simple functions that help request for pages on the web. The server is being hosted locally on a particular port.
+	</p>
+
+	<h1> The Proxy Servers: </h1>
+	<p style="font-size:25px;font-family:Ubuntu;">The web server has 2 proxy servers who are right now being set as slaves to the server to balance the load by choosing them in a sequential + cyclic manner.
+	<br>
+	With 2 proxies running alternate requests made to the server are run on the two proxies. This can be made more efficeint with more no.of proxies to view the Round Robin Agorithm used clearly.
+	</p>
+
+	<h1> The Cache: </h1>
+	<p style="font-size:25px;font-family:Ubuntu;"> The Cache has been implemented with a simple single file shared cache system that is common to all proxies and the main webserver itelf. The process goes like this :</p><br>
+
+		<h1> Internet Request utility------> HashedCode ------> Compare hash in cache : </h1>
+			<h2>If Cache Miss : Save the utility and Use it to open</h2>
+			<h2>If Cache Hit  : Use the stored utility to open</h2>
+
+	<p style="font-size:25px;font-family:Ubuntu;">To do so Hashlib module in python has been implemented with a MD5 algorithm to has the paths/urls of the utilities. Also Urllib module has been made use of to create requests,open urls,set proxies. </p>
+
+
+
+
+
+
+
+</body>
+</html>

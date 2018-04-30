@@ -1,0 +1,55 @@
+html {
+  height: 100%; /* Allows to stretch the image as the header image. */
+}
+ 
+body {
+  font-size: 87.5%;
+  font-family: Arial;
+  line-height: 1.5;
+  text-align: left;
+  height: 100%;
+}
+ 
+.mainHeader {
+  /* The url of the image is not required in HTML file */
+  background-image: url(main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75%;
+}
+ 
+a {
+  text-decoration: none; /* Removes the underline of the links */
+}
+ 
+.body {
+  margin: 0 auto;
+  width: 100%;
+  clear: both;
+}
+ 
+.mainHeader nav {
+  background-color: grey;
+  border-radius: 5px;
+}
+ 
+.mainHeader nav ul {
+  list-style: none; /* Removes the bullets */
+}
+ 
+.mainHeader nav ul li {
+  /* Makes the lists to inline */
+  float: left;
+  display: inline;
+}
+ 
+.mainHeader nav a:link, .mainHeader nav a:visited {
+  color: #000000;
+  display: inline-block;
+  padding: 20px 25px;
+}
+ 
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+  background-color: #f3f3f3;
+}
