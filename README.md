@@ -1,4 +1,4 @@
-![alt text](https://github.com/ManishShettyM/ProxyCloud/WebApp.png)
+![alt text](ProxyCloud/WebApp.png)
 
 
 # ProxyCloud
