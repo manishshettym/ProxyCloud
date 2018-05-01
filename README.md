@@ -10,26 +10,30 @@
 
 ### Running the project
 
-*Point your browsers proxy to the WebServers IP and port
+* Point your browsers proxy to the WebServers IP and port
 
-*To run the webserver:
+* To run the webserver:
 
 ```sh
 cd /path/to/your/directory
 python threading_cache_proxy.py
 ```
-*To run the two proxies built in:
+* To run the two proxies built in:
 
 ```sh
 cd /path/to/your/directory
 python proxy_server<serverid>.py
 ```
 
-*To run the proxy Web-App:
+* To run the proxy Web-App:
 ```sh
 cd /path/to/your/directory
 python3 app2.py
 ```
+## Development
+
+* Build and Add more proxies for your server with a few lines of simple code
+* Apply better caching techniques and load-balancing methods
 
 
 ## Tech/Libraries/Modules used
