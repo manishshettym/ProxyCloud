@@ -1,4 +1,4 @@
-![alt text](ProxyCloud/WebApp.png)
+![alt text]()
 
 
 # ProxyCloud
